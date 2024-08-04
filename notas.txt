@@ -1,0 +1,27 @@
+//* npx ts-node src/index.ts para ejecutar el archivo cuando se trata de typescript
+
+se instalan como dependencias de desarrollo estas npm i -D usar la D para indicar que es desarrollo
+"devDependencies": {
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+
+"dev": "nodemon --exec ts-node src/index.ts"
+npx tsc src/ruta del archvio para que compile lo de .ts a.js
+
+//instalar para trabajar con express y typescript
+npm i express
+npm i -D @types/express
+
+/* const db = new Sequelize('postgresql://rest_api_node_typescript_ohtn_user:2LxXy80vySyiCGE3BynqBPgdfWpq2Y2R@dpg-cqlvgnd2ng1s73e07t8g-a.oregon-postgres.render.com/rest_api_node_typescript_ohtn?ssl=true',{
+    dialectOptions:{
+        ssl:{
+            require: false
+        }
+    }
+}) */
+
+DATABASE_URL=postgresql://rest_api_node_typescript_ohtn_user:2LxXy80vySyiCGE3BynqBPgdfWpq2Y2R@dpg-cqlvgnd2ng1s73e07t8g-a.oregon-postgres.render.com/rest_api_node_typescript_ohtn?ssl=true
+
+npx ts-jest config:init para crear el archivo de configuracion jest

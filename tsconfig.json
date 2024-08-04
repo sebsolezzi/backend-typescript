@@ -1,0 +1,22 @@
+/* Al crear esta archivo espesificamos donde estas los archivos .ts
+que deseamos compilar a .js luego debemos ejecutar el comando
+npx tsc */
+
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": ["esnext"],
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": false,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src/**/*.ts"],
+  "exlude": ["src/**/*.tests.ts"]   
+}
